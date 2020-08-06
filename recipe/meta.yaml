@@ -1,5 +1,5 @@
 {% set name = "PyAVM" %}
-{% set version = "0.9.4" %}
+{% set version = "0.9.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f298b864e5bc101ecbb0e46252e95e18a180ac28ba6ec362e63c12a7e914e386
+  sha256: 815efcca9bd8c2884799d8cfde537917decf7e6c6e57dd6dbf0e60b18799ee2f
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -38,7 +38,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'A pure-Python module to represent, read, and write metadata following the Astronomy Visualization Metadata (AVM) standard'
+  summary: A pure-Python module to represent, read, and write metadata following the Astronomy Visualization Metadata (AVM) standard
   description: |
     A pure-Python module to represent, read, and write metadata following the
     Astronomy Visualization Metadata (AVM) standard. PyAVM supports Python 2.7
