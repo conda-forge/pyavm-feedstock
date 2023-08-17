@@ -7,15 +7,7 @@ Home: http://astrofrog.github.io/pyavm/
 
 Package license: MIT
 
-Summary: A pure-Python module to represent, read, and write metadata following the Astronomy Visualization Metadata (AVM) standard
-
-Development: https://github.com/astrofrog/pyavm
-
-A pure-Python module to represent, read, and write metadata following the
-Astronomy Visualization Metadata (AVM) standard. PyAVM supports Python 2.7
-and 3.5+. No other dependencies are needed simply to read and embed AVM
-meta-data.
-
+Summary: Simple pure-python AVM meta-data handling
 
 Current build status
 ====================
