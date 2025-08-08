@@ -24,6 +24,7 @@ requirements:
 
 test:
   requires:
+    - pip
     - astropy-base
     - numpy
     - pillow
