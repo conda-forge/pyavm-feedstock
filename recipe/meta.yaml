@@ -32,6 +32,7 @@ test:
     - python {{ python_min }}
   imports:
     - pyavm
+    - pyavm._version
   commands:
     - pip check
     - pytest $SP_DIR/pyavm -p no:warnings   # [not win]
