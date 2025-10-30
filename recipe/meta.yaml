@@ -1,18 +1,18 @@
 {% set name = "pyavm" %}
-{% set version = "0.9.6" %}
+{% set version = "0.9.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/PyAVM-{{ version }}.tar.gz
-  sha256: b3b78b3e80070db63db4fb77440e73260f8db93b5557f4aaa54511dcdac6f26d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 086421ddb833b55258353ec1fc06e32ef0067c994e770a0d8d4f76f0cbcc231d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 3
+  number: 0
 
 requirements:
   host:
