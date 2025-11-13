@@ -1,5 +1,5 @@
 {% set name = "pyavm" %}
-{% set version = "0.9.7" %}
+{% set version = "0.9.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 086421ddb833b55258353ec1fc06e32ef0067c994e770a0d8d4f76f0cbcc231d
+  sha256: ce11c279ec75bdf823d0c386124a1528a5e7b36fa5dd4d26499227939f117f88
 
 build:
   noarch: python
