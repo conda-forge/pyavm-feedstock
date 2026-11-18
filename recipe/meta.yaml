@@ -1,13 +1,13 @@
 {% set name = "pyavm" %}
-{% set version = "0.9.9" %}
+{% set version = "0.9.10" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bc0f605d957c1fd6d7765523fcba8b9a72377ac6c51461c2a838fe44600bcd9a
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 7f607ec2d0ce73204d14eee5c545f420d4f5b7ac3f5927a7add78172f9906dc1
 
 build:
   noarch: python
